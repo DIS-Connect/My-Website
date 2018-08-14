@@ -4,6 +4,8 @@
     margin: auto;
 }
 
+
+
 #info{
     margin-left: auto;
     margin-right: auto;
@@ -11,6 +13,9 @@
     width:70%;
     color: rgba(75, 191, 195, 0.81)
 }
+
+
+
 
 .button{
     position:relative;
@@ -44,41 +49,45 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 450%
 }
+.contentsize{font-size: 220%;}
+
 
 @media (max-width:700px){
 
     .paulchen{font-size: 450%;  margin-top: -9%;}
+    .contentsize{font-size: 210%;}
 
 }
 @media (max-width:650px){
 
     .paulchen{font-size: 425%; margin-top: -9%;}
+    .contentsize{font-size: 200%;}
 
 }
 @media (max-width:600px){
 
     .paulchen{font-size: 400%; margin-top: -12%;}
-
+    .contentsize{font-size: 190%;}
 }
 @media (max-width:550px){
 
     .paulchen{font-size: 375%; margin-top: -15.5%;}
-
+    .contentsize{font-size: 180%;}
 }
 @media (max-width:500px){
 
     .paulchen{font-size: 350%; margin-top: -19%;}
-
+    .contentsize{font-size: 170%;}
 }
 @media (max-width:450px){
 
     .paulchen{font-size: 325%; margin-top: -22%;}
-
+    .contentsize{font-size: 160%;}
 }
 @media (max-width:400px){
 
     .paulchen{font-size: 300%; margin-top:-25.3%;}
-
+    .contentsize{font-size: 150%;}
 }
 .icon{
     height:100%;
@@ -126,5 +135,35 @@
     margin-bottom:-4px ;
 }
 
+section {
+    text-align: center; }
+
+
+.fp-controlArrow.fp-prev {
+    border-color: transparent #000 transparent transparent !important; }
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #000 !important;
+    display: none;
+}
+
+#infocard{
+    z-index: 70;
+    height:40%;
+    width:300px;
+    position:fixed;
+    right:-20%;
+    top:30%;
+    background-color: #f2f2f2;
+    padding: 0 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition:300ms;
+}
+
+.content{
+    width:75%;
+    margin: auto;
+}
 
 
