@@ -10,32 +10,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.css" integrity="sha256-HlbaSsNFYDtE07AX08zEV5Cz8I8Llplo8EfbEH3ZCAY=" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.js" integrity="sha256-BTUh8xY8IhTlm9cnQVieAQh8UXCQNl++6DvvxWQG51k=" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/7e5d678fda.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 
 </head>
 <body>
+
+
+<div class="navba thin">
+ <img src="bilder/panthericon.png" class="icon">
+</div>
+
+
 <div id="pagepiling">
-    <div class="section middle" >
+
+
+
+    <div class="section">
+
         <div>
-            <h1 class="thin middle" style="position: fixed; top: 30%">Paulchen Panther</h1>
+            <div class="center">
+                <h1 class="paulchen">>Welcome<</h1>
+                <br>
+
+                <a class="button" href="#page2" >Projects</a>
+                <a class="button2" href="#page3" >&nbsp; About &nbsp; </a>
+
+
+            </div>
         </div>
-    </div>
-
-    <div class="section" >
 
     </div>
+
+    <div class="section">
+        <div>
+            <div class="center">
+                <h1 class="paulchen">>Projects<</h1>
+
+                <h5><a href="https://kopftausch.paulchenpanther.de/">Kopftausch ARG</a><br>
+                    <a href="https://play.google.com/store/apps/details?id=com.saveyourcar.c0nnect&hl=ln/">Drive2Live</a><br>
+                    <a href="https://math.paulchenpanther.de/">Math_helper</a><br>
+                    <a href="https://bilder.paulchenpanther.de/">Instagram</a>
+                </h5>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="section">
+        <div>
+            <div class="center">
+                <h1 class="paulchen">>About<</h1>
+                <br>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="section">
+        <div>
+            <div class="center" style="color:white">
+                <h1 class="paulchen" style="color:white">>Impress<</h1>
+                <h5>You can find my impress <br><a href="impressum.html">here</a>.</h5>
+                <br>
+
+            </div>
+        </div>
+
+
+    </div>
+
+//loca_parking  local_see   camera_alt   photo_camera
+
 
 </div>
-<div id="social">
 
+
+<div id="social">
+    <ul>
+        <li><a href="https://github.com/DIS-Connect" target="_blank"><i class="fa fa-github white-text"></i></a></li>
+        <li><a href="https://www.instagram.com/paul_heisenberg/" target="_blank"><img src="bilder/insta_icon.svg" ></a></li>
+
+    </ul>
 </div>
 <script>
     $(document).ready(function() {
-        $('#pagepiling').pagepiling();
+        $('#pagepiling').pagepiling({
+           sectionsColor: ['#EC5578',
+               '#b066b5',
+               '#f06292 ',
+               '#843e8a' ],
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            direction: 'vertical'
+        });
+
+        $(".navba").width($(".icon").width());
+console.log(    $(".navba").width($(".icon").width()*1.2));
     });
 
-    $('#pagepiling').pagepiling({
-        sectionsColor: ['#f8bbd0','#fce4ec ','#f48fb1 ','#f2f2f2', '#4BBFC3',  'whitesmoke', '#000','#c51162','#f8bbd0 ','#ff80ab', '#9575cd ']
-    });
+
 </script>
 </body>
 </html>
