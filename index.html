@@ -18,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="bilder/favicon.ico" />
 
 </head>
 <body>
@@ -49,10 +50,10 @@
                 <div style="width:70%;margin-left: 15%; height:400px; margin-bottom:-350px;">
                     <div style="margin-bottom:15px;" class="contentsize"><a href="https://kopftausch.paulchenpanther.de" style="color:#272a52; " id="kopftausch">Kopftausch</a>
                     </div>
-                    <div style="margin-bottom:15px;" class="contentsize"><a href="" style="color:#272a52" id="drive2life">Drive2Live</a></div>
+                    <div style="margin-bottom:15px;" class="contentsize"><a href="https://play.google.com/store/apps/details?id=com.saveyourcar.c0nnect&hl=de" style="color:#272a52" id="drive2life">Drive2Live</a></div>
                     <div style="margin-bottom:15px;" class="contentsize"><a href="http://math.paulchenpanther.de" style="color:#272a52" id="math_helper">Math_Helper</a>
                     </div>
-                    <div class="contentsize"><a style="color:#272a52" id="instagram" href="bilder.paulchenpanther.de">Instagram</a>
+                    <div class="contentsize"><a style="color:#272a52" id="instagram" href="https://bilder.paulchenpanther.de">Instagram</a>
                     </div>
                     </h4>
                 </div>
@@ -65,9 +66,9 @@
             <div class="center">
                 <h1 class="paulchen">>About<</h1>
                 <div style="width:70%;margin-left: 15%; height:400px; margin-bottom:-350px;">
-                    <div style="margin-bottom:15px;" class="contentsize"><a href="https://kopftausch.paulchenpanther.de" style="color:#272a52; " >     Hello I am Paul the creator of this Website. I am 16 years old and like to code in my freetime.
-                        I like JavaStript and nothing else.
-                    </a>
+                    <div style="margin-bottom:15px;" class="contentsize"><p style="color:#272a52; " >     Hello I am Paul a freetime programmer and the creator of this Website. I am 16 years old, from Germany and mostly code in JavaScript.
+
+                    </p>
                     </div>
 
                 </div>
@@ -78,8 +79,8 @@
     <div class="section">
         <div>
             <div class="center" style="color:white">
-                <h1 class="paulchen" style="color:white;">>Imprint<</h1>
-                <div style="width:70%;margin-left: 15%; height:400px; margin-bottom:-350px;"><h5>You can find my imprint <br> >  <a href="impressum.html">&nbsp;here&nbsp;</a><</h5>
+                <h1 class="paulchen" style="color:white;">>Impressum<</h1>
+                <div style="width:70%;margin-left: 15%; height:400px; margin-bottom:-350px;"><h5>Sie können mein Impressum ><a href="impressum.html">hier</a>< finden</h5>
                 </div>
                 <br>
 
@@ -107,7 +108,11 @@
                 '#b066b5',
                 '#f06292',
                 '#843e8a'],
-            anchors: ['page1', 'page2', 'page3', 'page4']
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            navigation: {
+                'position': 'right',
+                'tooltips': ['Welcome', 'Projects', 'About', 'Impressum']
+            }
         });
 
         $(".navba").width($(".icon").width() * 1.2);
